@@ -1,0 +1,18 @@
+
+abstract class Car{
+	abstract void run();
+}
+class Verna extends Car{
+	public void run()
+	{
+		System.out.println("Verna!!");
+	}
+}
+public class AbstractionExample{
+	public static void main(String[] args){
+	Verna v= new Verna();
+	v.run();
+	
+}
+
+} 
