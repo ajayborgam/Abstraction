@@ -1,0 +1,23 @@
+
+class Singer{
+	public void sing(){
+	System.out.println("naatu naatu");
+	}
+}
+class singer1 extends Singer{
+	public void sing(){
+		System.out.println("Salam Rocky Bhai!!");
+	}
+}
+class singer2 extends Singer{
+	public void sing(){
+		System.out.println(" king ");
+	}
+}
+
+public class Polymorphism{
+	public static void main(String[] args){
+	singer1 a = new singer1();
+	a.sing();
+	}
+}
