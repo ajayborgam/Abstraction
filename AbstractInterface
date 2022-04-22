@@ -1,0 +1,30 @@
+
+interface A{
+	void a();
+	void b();
+	void c();
+}
+class B implements A{
+	public void a()
+	{
+		System.out.println("method a");
+	}
+	
+	public void b()
+	{
+		System.out.println("method b");
+	}
+	public void c()
+	{
+		System.out.println("method c");
+	}
+}
+
+public class InterfaceTesting{
+	public static void main(String[] args){
+		A a=new B();
+		a.a();
+		a.b();
+		a.c();
+	}
+}
