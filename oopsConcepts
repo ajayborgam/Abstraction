@@ -1,0 +1,126 @@
+
+
+//Encapsulation
+
+class ClassStrength
+
+{
+	private int value;
+	public void setValue( int x)
+	{
+		value=x;
+	}
+	public int getValue()
+	{
+		System.out.println("Encapsulation: ClassStrength ");
+		return value;
+	}
+
+}
+
+
+//Abstraction Abstract Class
+
+abstract class Computers{
+	abstract void educate();
+}
+class ArtificialIntelligence extends Computers{
+	public void educate()
+	{
+		System.out.println("ArtificialIntelligence!!-- Abstract Class-- Abstraction");
+	}
+}
+
+
+// Abstraction Interface
+
+interface Amar{
+	void a();
+	void b();
+	void c();
+}
+class Birbal implements Amar {
+	public void a()
+	{
+		System.out.println("Abstraction_Interface- method a");
+	}
+	
+	public void b()
+	{
+		System.out.println("Abstraction_Interface- method b");
+	}
+	public void c()
+	{
+		System.out.println("Abstraction_Interface- method c");
+	}
+}
+
+
+//Polymorphism/Inheritense
+
+class Cse{
+	public void branch(){
+	System.out.println(" CSE dept -- Polymorphism/Inheritense ");
+	}
+}
+class Btech extends Cse{
+	public void branch(){
+		System.out.println(" BTech -- Polymorphism/Inheritense ");
+	}
+}
+class Mtech extends Cse{
+	public void branch(){
+		System.out.println(" Mtech -- Polymorphism/Inheritense ");
+	}
+}
+
+
+
+public class oopsConcepts{
+
+	
+	public static void main(String[] args){
+
+	//Encapsulation
+
+	ClassStrength r=new ClassStrength();
+	r.setValue(100);
+	System.out.println(r.getValue());
+	
+
+	//Abstraction-Abstract-Class
+
+	ArtificialIntelligence v= new ArtificialIntelligence();
+	v.educate();
+	
+	
+
+	//Abstraction-Interface
+
+	Amar ajay=new Birbal();
+	ajay.a();
+	ajay.b();
+	ajay.c();
+
+	
+	//Polymorphism //inheritense
+
+	Btech akhil = new Btech();
+	akhil.branch();
+
+
+	try {
+  		// code that generates exception
+      		int divideByZero = 5 / 0;
+   	 }
+
+    	catch (ArithmeticException e) {
+     		System.out.println("ArithmeticException => " + e.getMessage());
+   		 }
+    
+    	finally {
+      		System.out.println("finally block- executes without bothering of try and catch blocks");
+ 		}
+}
+
+}
