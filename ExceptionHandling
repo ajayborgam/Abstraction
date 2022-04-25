@@ -1,0 +1,38 @@
+Arithmetic Exception
+
+
+public class ArithmeticException2{
+	public static void main(String[] args){	
+	try {
+		int divideByzero = 20/0;
+		}
+	catch(ArithmeticException a){
+		System.out.println("\nArithmeticException:- "+a.getMessage());
+		}
+	finally{
+		System.out.println("\nfinally block executes without bothering of try and catch blocks");
+	}
+}
+}
+
+NullPointer Exception
+
+
+import java.io.*;
+class NullPtrException{
+	public static void main(String[] args)
+	{
+	String ptr = null;
+	try
+	{
+	if (ptr.equals("ajay"))
+		System.out.println("same string");
+	else
+		System.out.println("not same string");
+	}
+	catch(NullPointerException n)
+	{
+		System.out.println("\nNull Pointer Exception");
+	}
+}
+}
