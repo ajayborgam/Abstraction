@@ -1,0 +1,25 @@
+
+import java.util.*;
+public class CollectionQueueDemo{
+	public static void main(String args[]){
+		PriorityQueue<String> queue= new PriorityQueue<String>();
+		queue.add("ajay");
+		queue.add("shiva");
+		queue.add("akhil");
+		queue.add("srikanth");
+		System.out.println("head: "+queue.element());
+		System.out.println("iterating the elements in the queue:");
+		
+		Iterator iterator = queue.iterator();
+		while(iterator.hasNext()){
+		System.out.println(iterator.next());
+		}
+		queue.remove();
+
+		System.out.println("queue after removing the elements:" );
+		Iterator<String> iterator2=queue.iterator();
+		while(iterator2.hasNext()){
+			System.out.println(iterator2.next());
+	}
+}
+}
