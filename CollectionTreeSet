@@ -1,0 +1,17 @@
+
+
+import java.util.*;  
+public class CollectionTreeSet{  
+	public static void main(String args[]){  
+  
+		TreeSet<String> set=new TreeSet<String>();  
+		set.add("Ajay");  
+		set.add("Chintu");  
+		set.add("Raghu");  
+		set.add("Sami");    
+		Iterator<String> iterator=set.iterator();  
+		while(iterator.hasNext()){  
+			System.out.println(iterator.next());  
+		}  
+	}  
+}
