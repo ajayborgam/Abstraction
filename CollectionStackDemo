@@ -1,0 +1,17 @@
+import java.util.*;  
+public class CollectionStackDemo{  
+	public static void main(String args[]){  
+		Stack<String> stack = new Stack<String>();  
+		stack.push("Ajay");  
+		stack.push("Akhil");  
+		stack.push("Shiva");  
+		stack.push("Srikanth");  
+		stack.push("Raj");  
+		stack.pop(); 
+		stack.pop();
+		Iterator<String> iterator=stack.iterator();  
+		while(iterator.hasNext()){  
+		System.out.println(iterator.next());  
+		}  
+	}  
+} 
