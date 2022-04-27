@@ -1,0 +1,16 @@
+
+import java.util.*;  
+public class CollectionHashSet{  
+	public static void main(String args[]){  
+		HashSet<String> set=new HashSet<String>();  
+		set.add("Ajay");  
+		set.add("Akhil");  
+		set.add("Shiva");  
+		set.add("Mallaiah");  
+ 
+		Iterator<String> iterator=set.iterator();  
+		while(iterator.hasNext()){  
+			System.out.println(iterator.next());  
+		}  
+	}  
+}  
