@@ -10,8 +10,15 @@ public static void main(String args[]){
 	Iterator iterator= list.iterator();
 	while(iterator.hasNext()){
 	System.out.println(iterator.next());
-	
-	
-		}
 	}
+	list.remove("ajay");
+	System.out.println(list);
+
+	list.remove(1);
+	System.out.println(list);
+
+	list.add(2,"suresh");
+	System.out.println(list);
+
+		}
 }
