@@ -16,6 +16,9 @@ public static void main(String args[]){
 	list.remove(2);
 	System.out.println(list);
 	
+	list.add(0,"Rocky");
+	System.out.println(list)
+	
 		
 	}
 }
